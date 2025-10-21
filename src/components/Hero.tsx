@@ -35,10 +35,10 @@ export const Hero: React.FC<HeroProps> = ({ onContact }) => {
                 Agende uma consulta
               </button>
               <a
-                href="#areas"
+                href="#area"
                 className="px-5 py-3 rounded-md border border-gray-200"
               >
-                Áreas de atuação
+                Área de atuação
               </a>
             </div>
 

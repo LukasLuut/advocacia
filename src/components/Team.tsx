@@ -18,7 +18,7 @@ export const Team: React.FC = () => {
   const SAMPLE_TEAM: TeamMember[] = [
     {
       name: "Dr. Alexandre Reis",
-      oab: "OAB/SP 123456",
+      oab: "OAB/RS 123456",
       description:
         "Advogado especializado em Direito Civil, Empresarial e Trabalhista — estratégia e ética.",
       photoUrl: imgAlex2,
@@ -30,7 +30,7 @@ export const Team: React.FC = () => {
     <section className="py-16">
       <Container>
         <h2 className="text-3xl font-serif text-[#B19763]">Equipe</h2>
-        <div className="mt-6 space-y-8">
+        <div className="mt-6 ">
           {SAMPLE_TEAM.map((m) => (
             <motion.div
               key={m.name}

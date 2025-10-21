@@ -21,7 +21,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#fffaf6] to-[#f3efe7] text-gray-900">
+    <div className="min-h-full bg-gradient-to-b from-[#fffaf6] to-[#f3efe7] text-gray-900">
       <Header onNavigate={navigate} current={page} />
 
       <main className="pt-20">
@@ -96,7 +96,7 @@ export default function App() {
       {/* Botão WhatsApp flutuante */}
       <motion.a
         href="https://wa.me/5551995185222"
-        className="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-lg"
+        className="fixed sm:bottom-20 md:bottom-5 right-6 bg-green-500 text-white rounded-full p-4 shadow-lg"
         aria-label="WhatsApp"
         animate={{
           scale: [1, 1.1, 1],

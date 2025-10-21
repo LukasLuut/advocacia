@@ -1,52 +1,66 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Container } from "./Container"; // ajuste o caminho se necessário
-import { Award, ShoppingBag, Wrench } from "lucide-react"; // ícones
-
-interface Area {
-  title: string;
-  desc: string;
-  icon: React.ElementType;
-}
+import { Container } from "./Container";
+import { Scale, Users, FileCheck, Handshake } from "lucide-react";
 
 export const Areas: React.FC = () => {
-  // --- Data
-  const AREAS: Area[] = [
+  const SERVICOS = [
     {
-      title: "Direito Civil",
-      desc: "Atuação em contratos, responsabilidade civil, e tutelas de direitos individuais.",
-      icon: Award,
+      title: "Reclamações Trabalhistas",
+      desc: "Representação completa em ações de vínculo, horas extras, adicionais e verbas rescisórias.",
+      icon: Scale,
     },
     {
-      title: "Direito Empresarial",
-      desc: "Planejamento societário, contratos comerciais e compliance empresarial.",
-      icon: ShoppingBag,
+      title: "Acordos e Rescisões",
+      desc: "Condução estratégica de acordos e rescisões, buscando soluções equilibradas e rápidas.",
+      icon: Handshake,
     },
     {
-      title: "Trabalhista",
-      desc: "Acordos, inventários, separações e tutela nos momentos delicados.",
-      icon: Wrench,
+      title: "Consultoria Preventiva",
+      desc: "Orientação para empresas e profissionais na prevenção de passivos trabalhistas.",
+      icon: FileCheck,
+    },
+    {
+      title: "Assédio Moral e Sexual",
+      desc: "Atuação sensível e assertiva em casos de assédio, garantindo proteção e justiça ao trabalhador.",
+      icon: Users,
     },
   ];
 
   return (
-    <section id="areas" className="py-16 bg-white">
+    <section
+      id="direito-trabalhista"
+      className="py-20 bg-white "
+    >
       <Container>
-        <h2 className="text-3xl font-serif text-[#B19763]">Áreas de Atuação</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          {AREAS.map((a) => (
+        <div className="text-center  mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif text-[#B19763]">
+            Direito Trabalhista
+          </h2>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Especialização em Direito Trabalhista, com atuação dedicada à defesa
+            de empregados e empregadores, assegurando soluções eficazes,
+            humanas e estratégicas em cada caso.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {SERVICOS.map((s) => (
             <motion.div
-              key={a.title}
+              key={s.title}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-xl border border-gray-100 shadow-sm bg-gradient-to-tr from-white to-gray-50"
+              transition={{ type: "spring", stiffness: 200 }}
+              className="p-6 rounded-xl  border border-gray-100 shadow-sm bg-gradient-to-tr from-white to-gray-50"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex  items-start gap-4">
                 <div className="p-3 rounded bg-[#f3efe7]">
-                  <a.icon className="w-6 h-6 text-[#B19763]" />
+                  <s.icon className="w-6 h-6 text-[#B19763]" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{a.title}</h3>
-                  <p className="text-sm text-gray-600 mt-1">{a.desc}</p>
+                  <h3 className="font-semibold text-lg">{s.title}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-600 mt-2">
+                    {s.desc}
+                  </p>
                 </div>
               </div>
             </motion.div>
