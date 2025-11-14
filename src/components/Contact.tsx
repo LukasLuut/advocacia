@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Container } from "./Container";
-import { Phone, Mail, MapPin, Loader2 } from "lucide-react";
+import { Phone, Mail, Loader2 } from "lucide-react";
 import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
 

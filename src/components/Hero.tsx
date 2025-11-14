@@ -6,9 +6,10 @@ import { Phone, Mail } from "lucide-react"; // ou outro pacote de ícones
 
 interface HeroProps {
   onContact: () => void;
+  areaContainer: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onContact }) => {
+export const Hero: React.FC<HeroProps> = ({ onContact, areaContainer }) => {
   return (
     <section className="min-h-[60vh] flex items-center pt-2 pb-4">
       <Container>
@@ -34,17 +35,23 @@ export const Hero: React.FC<HeroProps> = ({ onContact }) => {
               >
                 Agende uma consulta
               </button>
-              <a
-                href="#area"
+              <button
+                onClick={areaContainer}
                 className="px-5 py-3 rounded-md border border-gray-200"
               >
                 Área de atuação
-              </a>
+              </button>
             </div>
 
             <div className="flex flex-col sm:flex-row mt-3 gap-3 sm:gap-6 items-start sm:items-center text-gray-600">
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" /> <span>+55 (51) 9 9518-5222</span>
+              <div className="flex items-center flex-col gap-2">
+                <div className="flex flex-row items-center">
+                  <Phone className="w-4 h-4 mr-2" /> <span>+55 (51) 9 9518-5222</span>
+                </div>
+                <div className="flex flex-row  items-center">
+                   <Phone className="w-4 h-4 mr-2" /> <span>+55 (48) 9 8806-5502</span>
+                </div>
+               
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" /> <span>alexandresdosreisadv@gmail.com</span>

@@ -18,7 +18,7 @@ export const Team: React.FC = () => {
   const SAMPLE_TEAM: TeamMember[] = [
     {
       name: "Dr. Alexandre Reis",
-      oab: "OAB/RS 123456",
+      oab: " OAB/RS 42617 - OAB/SP 522297 - OAB/RJ 262746 - OAB/PR 125780 - OAB/SC 70346-A - OAB/BA  88795",
       description:
         "Advogado especializado em Direito Civil, Empresarial e Trabalhista — estratégia e ética.",
       photoUrl: imgAlex2,
@@ -50,7 +50,7 @@ export const Team: React.FC = () => {
                   />
                   <div className="text-left text-white">
                     <h3 className="text-2xl font-serif">{m.name}</h3>
-                    <p className="text-[#B19763] italic mt-1">{m.oab}</p>
+                    <p className="text-[#B19763] italic mt-1 bg-black/40 px-5 rounded-2xl">{m.oab}</p>
                     <p className="mt-3 text-sm md:text-base">{m.description}</p>
                   </div>
                 </div>

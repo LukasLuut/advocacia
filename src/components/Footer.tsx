@@ -9,11 +9,7 @@ export const Footer: React.FC = () => {
           <div className="text-sm text-[#E5E5E5]">
             © {new Date().getFullYear()} Dr. Alexandre Reis — Todos os direitos reservados
           </div>
-
-          <div className="flex items-center gap-4 text-[#B19763]">
-            <a href="#">LinkedIn</a>
-            <a href="#">OAB</a>
-          </div>
+         
         </div>
       </Container>
     </footer>

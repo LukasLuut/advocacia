@@ -125,12 +125,12 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, current }) => {
                 </button>
               ))}
               <div className="p-4">
-                <a
-                  href="#"
-                  className="block text-center py-3 rounded-md bg-[#B19763] text-black font-semibold hover:bg-[#c5ac6b] transition-colors"
+                <button
+                  onClick={()=>navigateHandle()}
+                  className="block w-full text-center py-3 rounded-md bg-[#B19763] text-black font-semibold hover:bg-[#c5ac6b] transition-colors"
                 >
                   Agendar Consulta
-                </a>
+                </button>
               </div>
             </motion.div>
           </>

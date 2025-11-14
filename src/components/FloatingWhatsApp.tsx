@@ -7,7 +7,7 @@ export default function FloatingWhatsApp() {
       href="https://wa.me/5551995185222" // ← substitua pelo número real
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 bg-[#25D366] text-white p-3 rounded-full shadow-lg z-50"
+      className="fixed bottom-12 right-4 bg-[#25D366] text-white p-3 rounded-full shadow-lg z-50"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       aria-label="Abrir conversa no WhatsApp"

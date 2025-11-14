@@ -4,7 +4,7 @@ import imgAlex3 from "../assets/Alexandre-Reis-sm.png"; // ajuste conforme a ima
 
 export const About: React.FC = () => {
   return (
-    <section className="py-16">
+    <section className="lg:py-16 py-6 ">
       <Container>
         <div className="md:flex gap-8 items-center">
           {/* Texto */}
@@ -18,7 +18,14 @@ export const About: React.FC = () => {
             </p>
 
             <ul className="mt-6 text-gray-700 space-y-2">
-              <li>• OAB/RS 123456</li>
+              <li>• OAB/RS 42617 <br/> 
+                • OAB/SP 522297 <br/>
+                • OAB/RJ 262746 <br/>
+                • OAB/PR 125780 <br/>
+                • OAB/SC 70346-A <br/>
+                • OAB/BA  88795
+                    
+              </li>
               <li>• Formado em Direito Empresarial</li>
               <li>• Mais de 25 anos de experiência defendendo trabalhadores e seus direitos em empresas de grande porte.</li>
             </ul>
